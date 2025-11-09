@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwimSmart AI Watch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+          },
+        },
+      };
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-black flex items-center justify-center min-h-screen p-4 font-sans antialiased">
+    <div class="relative w-[320px] h-[390px] bg-black rounded-[40px] shadow-2xl shadow-cyan-500/10 border-8 border-zinc-800">
+      <div id="root" class="w-full h-full overflow-y-auto overflow-x-hidden scrollbar-hide"></div>
+      <!-- Decorative Digital Crown -->
+      <div class="absolute top-1/4 -right-6 w-7 h-14 bg-zinc-800 rounded-full border-2 border-zinc-700 -translate-y-1/2 flex items-center justify-center">
+        <div class="w-4 h-4 bg-zinc-700 rounded-full"></div>
+      </div>
+    </div>
+  </body>
+</html>

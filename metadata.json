@@ -1,0 +1,5 @@
+{
+  "name": "SwimSmart AI Report Generator",
+  "description": "An AI-powered swim coach that analyzes your swimming data to automatically generate progress summaries, personalized improvement tips, and custom drills.",
+  "requestFramePermissions": []
+}
